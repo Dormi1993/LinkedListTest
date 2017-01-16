@@ -86,6 +86,8 @@ public class LinkedListTest {
                 p.next = temp;
                 p.value = newValue;
                 return;
+
+
             }
             count++;
             tail = p;
@@ -234,17 +236,25 @@ public class LinkedListTest {
         // LinkedListTest.print(list1);
         // ListNode list2 = LinkedListTest.create2(new int[]{1,2,3});
         // LinkedListTest.print(list2);
-        ListNode list3 = LinkedListTest.create2(new int[] { 1, 2, 3 });
-        LinkedListTest.print(list3);
-        LinkedListTest.add2(list3, 1, 9);
-        LinkedListTest.print(list3);
 
+        int[] arp = new int[4];
+        ListNode list = LinkedListTest.create2(new int[] {2, 5, 3});
+
+        LinkedListTest.add1(list, 2, 12);
+        LinkedListTest.print(list);
+
+        ListNode list3 = LinkedListTest.create2(new int[] {3, 5, 7, 2});
+//        LinkedListTest.print(list3);
+//        LinkedListTest.add2(list3, 1, 9);
+//        LinkedListTest.print(list3);
+//
         ListNode newHead = LinkedListTest.reverse(list3);
         LinkedListTest.print(newHead);
-
-        ListNode bigList = LinkedListTest.merge(LinkedListTest.create2(new int[] { 1, 2, 3, 5, 7, 8 }),
-                LinkedListTest.create2(new int[] { 2, 4, 7, 8 }));
-        LinkedListTest.print(bigList);
+//
+//        ListNode bigList = LinkedListTest.merge(LinkedListTest.create2(new int[] { 1, 2, 3, 5, 7, 8 }),
+//                LinkedListTest.create2(new int[] { 2, 4, 7, 8 }));
+//        LinkedListTest.print(bigList);
+//
 
         ListNode circle = new ListNode(1);
         circle.next = new ListNode(2);
